@@ -1,16 +1,16 @@
 {
-  "name": "boring-avatars",
-  "description": "Boring avatars is a tiny JavaScript React library that generates custom, SVG-based, round avatars from any username and color palette.",
+  "name": "boring-neutral-avatars",
+  "description": "Boring neutral avatars takes the boring avatars 'beam' avatar and updates the facial features to be neutral and better suited for behavioral research.",
   "homepage": "https://boringavatars.com/",
   "version": "1.6.3",
   "main": "build/index.js",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/boringdesigners/boring-avatars"
+    "url": "https://github.com/henry-burgess/boring-neutral-avatars"
   },
   "bugs": {
-    "url": "https://github.com/boringdesigners/boring-avatars/issues"
+    "url": "https://github.com/henry-burgess/boring-neutral-avatars/issues"
   },
   "keywords": [
     "avatar",
