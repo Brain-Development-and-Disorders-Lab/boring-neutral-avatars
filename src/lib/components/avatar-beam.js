@@ -20,7 +20,6 @@ function generateData(name, colors) {
     wrapperTranslateY: wrapperTranslateY,
     wrapperRotate: getUnit(numFromName, 360),
     wrapperScale: 1 + getUnit(numFromName, SIZE / 12) / 10,
-    isMouthOpen: getBoolean(numFromName, 2),
     isCircle: getBoolean(numFromName, 1),
     eyeSpread: getUnit(numFromName, 5),
     mouthSpread: getUnit(numFromName, 3),
@@ -90,34 +89,27 @@ const AvatarBeam = (props) => {
             ')'
           }
         >
-          {data.isMouthOpen ? (
-            <path
-              d={'M15 ' + (19 + data.mouthSpread) + 'c2 1 4 1 6 0'}
-              stroke={data.faceColor}
-              fill="none"
-              strokeLinecap="round"
-            />
-          ) : (
-            <path
-              d={'M13,' + (19 + data.mouthSpread) + ' a1,0.75 0 0,0 10,0'}
-              fill={data.faceColor}
-            />
-          )}
+          <path
+            d={'M18 ' + (19 + data.mouthSpread) + `l ${data.faceTranslateX < 0 ? '-' : ''}2,4 h${data.faceTranslateX < 0 ? '' : '-'}2`}
+            stroke={data.faceColor}
+            fill="none"
+            strokeLinecap="round"
+          />
           <rect
             x={14 - data.eyeSpread}
             y={14}
-            width={1.5}
-            height={2}
-            rx={1}
+            width={4}
+            height={4}
+            rx={2}
             stroke="none"
             fill={data.faceColor}
           />
           <rect
             x={20 + data.eyeSpread}
             y={14}
-            width={1.5}
-            height={2}
-            rx={1}
+            width={4}
+            height={4}
+            rx={2}
             stroke="none"
             fill={data.faceColor}
           />
