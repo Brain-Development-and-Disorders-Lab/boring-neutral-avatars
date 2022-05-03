@@ -1,4 +1,4 @@
-declare module "boring-avatars" {
+declare module "boring-neutral-avatars" {
   export interface AvatarProps {
     size?: number | string;
     name?: string;

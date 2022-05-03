@@ -2,7 +2,7 @@
   "name": "boring-neutral-avatars",
   "description": "Boring neutral avatars takes the boring avatars 'beam' avatar and updates the facial features to be neutral and better suited for behavioral research.",
   "homepage": "https://boringavatars.com/",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "main": "build/index.js",
   "types": "index.d.ts",
   "repository": {
